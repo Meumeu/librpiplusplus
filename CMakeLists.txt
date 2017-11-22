@@ -41,5 +41,4 @@ install(TARGETS rpi++ EXPORT librpi++
 	
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/rpi++)
 
-install(EXPORT librpi++ DESTINATION share/cmake)
-export(TARGETS rpi++ FILE rpi++.cmake)
+install(EXPORT librpi++ FILE librpi++-config.cmake DESTINATION share/librpi++/cmake)
